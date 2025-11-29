@@ -7,28 +7,28 @@
 
 @font-face {
   font-family: "Epilogue";
-  src: url("./fonts/Epilogue-Regular.woff2") format("woff2");
+  src: url("Epilogue-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: regular;
 }
 
 @font-face {
   font-family: "Epilogue";
-  src: url("./fonts/Epilogue-Medium.woff2") format("woff2");
+  src: url("Epilogue-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: medium;
 }
 
 @font-face {
   font-family: "Epilogue";
-  src: url("./fonts/Epilogue-SemiBold.woff2") format("woff2");
+  src: url("Epilogue-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: semibold;
 }
 
 @font-face {
   font-family: "Epilogue";
-  src: url("./fonts/Epilogue-Bold.woff2") format("woff2");
+  src: url("Epilogue-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: bold;
 }
@@ -290,5 +290,6 @@ h1::before{
 p{
     font-size: 0.8rem;
 }
+
 
 }
