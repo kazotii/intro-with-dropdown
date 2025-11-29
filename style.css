@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("./fonts/Epilogue-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("./fonts/Epilogue-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("./fonts/Epilogue-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: semibold;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("./fonts/Epilogue-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: "Epilogue";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.left-header-content{
+    display: flex;
+}
+
+.snap{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.left-buttons a,
+.right-buttons a {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgb(129, 129, 129);
+}
+
+.left-buttons{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 40px;
+}
+
+.features-btn,
+.company-btn{
+    border-style: none;
+    background: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: "Epilogue";
+    color: rgb(129, 129, 129);
+    cursor: pointer;
+}
+
+button:hover{
+    color: #19191a;
+}
+
+a:hover{
+    color: #19191a;
+}
+
+button.active{
+    color: #19191a;
+}
+
+.register-btn:hover{
+    border-color: #19191a;
+}
+
+.features-icon-arrow-down,
+.company-icon-arrow-down{
+    padding-left: 5px;
+}
+
+.features-dropdown-menu,
+.company-dropdown-menu{
+    position: relative;
+}
+
+.hidden{
+    display: none !important;
+    pointer-events: none;
+    position:absolute;
+}
+
+.features-dropdown-menu-hidden,
+.company-dropdown-menu-hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 200%;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding-left: 30px;
+    gap: 15px;
+}
+
+.features-dropdown-menu-hidden{
+    right: 1px;
+    width: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.company-dropdown-menu-hidden{
+    width: 120px;
+    height: 120px;
+}
+
+.right-buttons{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.register-btn{
+    border-style: solid;
+    border-color: rgb(129, 129, 129);
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 13px 17px 13px 17px;
+}
+
+.left-main-content{
+    padding-top: 100px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.text-and-photo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: rgb(129, 129, 129);
+}
+
+.learn-more-button {
+    display: flex;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Epilogue";
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more-button:hover {
+    background: #ffffff;
+    color: #19191a;
+    border-color: #19191a;
+    border-style: solid;
+}
+
+.partners-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners-images img {
+    object-fit: contain;
+}
+
+.main-image{
+    width: 550px;
+    height: 550px;
+}
+
+
+@media (max-width: 500px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    padding: 10px;
+    right: 5px;
+}
+
+.main-image{
+    width: 360px;
+    height: 370px;
+}
+
+.left-buttons,
+.right-buttons{
+    display: none;
+}
+
+.left-main-content{
+    padding: 0;
+    padding-top: 5px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-and-photo{
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more-button{
+    width: 150px;
+    height: 50px;
+}
+
+.partners-images img{
+    width: 70px;
+    height: 50px;
+}
+
+.partners-images{
+    gap: 20px;
+}
+
+h1{
+    font-size: 0;
+}
+
+h1::before{
+    content: "Make remote work";
+    font-size: 2rem;
+    display: block;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+}
